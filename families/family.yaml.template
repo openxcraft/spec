@@ -1,0 +1,9 @@
+id: FAM-000000
+title: <generic capability family name>
+slug: <generic-slug>
+capabilities: [CAP-0000]
+members: []
+created: 2026-10-30
+updated: 2026-10-30
+similarity_threshold: 0.60
+owner_role: orchestrator-operator

@@ -1,0 +1,173 @@
+meta:
+  updated: '2026-10-30'
+  owner_role: orchestrator-operator
+  similarity_metric: jaccard on capability id sets
+capabilities:
+- id: CAP-0001
+  name: document-authoring
+  category: productivity
+  description: Create, edit, format, and export text documents.
+- id: CAP-0002
+  name: spreadsheet-grid
+  category: productivity
+  description: Tabular cell editing with formulas, references, and recalculation.
+- id: CAP-0003
+  name: presentation-composition
+  category: productivity
+  description: Compose slide-based narrative documents with layouts.
+- id: CAP-0004
+  name: task-and-todo-management
+  category: productivity
+  description: Create, assign, schedule, and complete personal tasks.
+- id: CAP-0005
+  name: calendar-scheduling
+  category: productivity
+  description: Event creation, reminders, recurrence, and availability.
+- id: CAP-0006
+  name: direct-messaging
+  category: communication
+  description: One-to-one text exchange with delivery states.
+- id: CAP-0007
+  name: group-chat-channels
+  category: communication
+  description: Multi-participant topical conversation spaces.
+- id: CAP-0008
+  name: voice-video-calls
+  category: communication
+  description: Real-time audio and video sessions between participants.
+- id: CAP-0009
+  name: email-management
+  category: communication
+  description: Message retrieval, composition, threading, and filtering.
+- id: CAP-0010
+  name: real-time-coediting
+  category: collaboration
+  description: Concurrent multi-user editing with conflict resolution.
+- id: CAP-0011
+  name: comment-and-review
+  category: collaboration
+  description: Annotated feedback threads on shared artifacts.
+- id: CAP-0012
+  name: shared-workspaces
+  category: collaboration
+  description: Permissioned spaces grouping members and artifacts.
+- id: CAP-0013
+  name: course-delivery
+  category: education
+  description: Structured lesson sequencing with progress tracking.
+- id: CAP-0014
+  name: quizzing-assessment
+  category: education
+  description: Question banks, scoring, and graded responses.
+- id: CAP-0015
+  name: spaced-repetition
+  category: education
+  description: Review scheduling based on recall performance.
+- id: CAP-0016
+  name: encryption-at-rest-transit
+  category: privacy-and-security
+  description: Data protection in storage and in transit.
+- id: CAP-0017
+  name: password-credential-vault
+  category: privacy-and-security
+  description: Encrypted storage and retrieval of credentials.
+- id: CAP-0018
+  name: two-factor-authentication
+  category: privacy-and-security
+  description: Second-factor verification during sign-in.
+- id: CAP-0019
+  name: network-traffic-filtering
+  category: privacy-and-security
+  description: Rule-based blocking or routing of network requests.
+- id: CAP-0020
+  name: payment-processing
+  category: finance
+  description: Charge authorization, capture, and settlement flows.
+- id: CAP-0021
+  name: budgeting-expense-tracking
+  category: finance
+  description: Categorize spending against planned limits.
+- id: CAP-0022
+  name: invoicing-billing
+  category: finance
+  description: Issue invoices, track status, and reconcile payments.
+- id: CAP-0023
+  name: workout-activity-logging
+  category: health-and-fitness
+  description: Record sessions with duration, intensity, and metrics.
+- id: CAP-0024
+  name: habit-tracking
+  category: health-and-fitness
+  description: Streaks and adherence tracking for repeated behaviors.
+- id: CAP-0025
+  name: media-playback
+  category: media-and-creative
+  description: Sequential playback with queues and position memory.
+- id: CAP-0026
+  name: image-video-editing
+  category: media-and-creative
+  description: Transform media with layers, filters, and timelines.
+- id: CAP-0027
+  name: code-hosting-version-control
+  category: developer-tools
+  description: Repository storage with branching and review.
+- id: CAP-0028
+  name: issue-and-project-tracking
+  category: developer-tools
+  description: Work items with states, priorities, and boards.
+- id: CAP-0029
+  name: ci-cd-pipelines
+  category: developer-tools
+  description: Automated build, test, and release execution.
+- id: CAP-0030
+  name: product-catalog-management
+  category: e-commerce
+  description: Listings with attributes, pricing, and availability.
+- id: CAP-0031
+  name: cart-and-checkout
+  category: e-commerce
+  description: Order assembly, pricing, and payment handoff.
+- id: CAP-0032
+  name: dashboarding-visualization
+  category: data-and-analytics
+  description: Charts and panels bound to live queries.
+- id: CAP-0033
+  name: etl-data-pipelines
+  category: data-and-analytics
+  description: Scheduled extraction, transformation, and loading.
+- id: CAP-0034
+  name: workflow-automation-triggers
+  category: automation
+  description: Event-condition-action rules across systems.
+- id: CAP-0035
+  name: app-integration-connectors
+  category: automation
+  description: Configured adapters exchanging data between tools.
+- id: CAP-0036
+  name: note-taking-linking
+  category: knowledge-management
+  description: Atomic notes with bidirectional links and backlinks.
+- id: CAP-0037
+  name: fulltext-search-indexing
+  category: knowledge-management
+  description: Query content across stored artifacts with ranking.
+- id: CAP-0038
+  name: service-request-tracking
+  category: civic-and-government-services
+  description: File and follow public service requests to resolution.
+- id: CAP-0039
+  name: file-cleanup-optimization
+  category: system-utilities
+  description: Detect redundant files and reclaim storage space.
+- id: CAP-0040
+  name: backup-and-restore
+  category: system-utilities
+  description: Versioned snapshots with point-in-time recovery.
+- id: CAP-0041
+  name: game-progression-systems
+  category: games
+  description: Levels, rewards, and state persistence for players.
+- id: CAP-0042
+  name: matchmaking-lobbies
+  category: games
+  description: Player grouping by criteria into shared sessions.

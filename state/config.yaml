@@ -1,0 +1,68 @@
+# Orchestrator configuration. Changes take effect on the next cycle.
+meta:
+  version: 1
+  updated: 2026-10-30
+  owner_role: orchestrator-operator
+
+scheduling:
+  cycles_per_day: 2
+  cycle_times_local: ["06:00", "18:00"]
+  timezone: Asia/Baghdad
+  scheduler_jobs:
+    bootstrap: "spec-orchestrator bootstrap pilot"
+    cycle_morning: "spec-orchestrator daily scan cycle 06:00"
+    cycle_evening: "spec-orchestrator daily scan cycle 18:00"
+    weekly_audit: "spec-orchestrator weekly coverage audit"
+    quarterly_review: "spec-orchestrator quarterly review"
+
+quotas:
+  max_new_specs_per_cycle: 4
+  min_new_specs_per_cycle: 1
+  max_category_share_per_cycle: 0.25
+  known_vs_niche_target_ratio: 0.5
+  min_discoveries_per_active_cell_per_week: 2
+  cell_staleness_days: 30
+
+triage:
+  legal_risk_scale: 0-5
+  legal_risk_max_for_auto_publish: 2
+  legal_risk_human_review_range: [3, 4]
+  legal_risk_reject: 5
+  score_formula: "functional_value + source_clarity + (5 - legal_risk)"
+
+families:
+  fingerprint_similarity_metric: jaccard
+  fingerprint_similarity_threshold: 0.60
+
+gates:
+  firewall_checks:
+    - name-free
+    - expression-free
+    - asset-free
+    - secret-free
+    - similarity
+    - reverse-identification
+    - sufficiency
+    - neutrality
+  reverse_identification_confidence_block: high
+
+suspension:
+  safe_stop_consecutive_failures_per_target: 3
+  rejection_rate_window_cycles: 3
+  rejection_rate_suspend_threshold: 0.50
+
+notifications:
+  discord: true
+  telegram: true
+  github_push: true
+  gitlab_push: false   # requires /home/z/my-project/.secrets/gitlab.token
+
+review:
+  quarterly_sample_size: 10
+  platform_limits_check_cadence_days: 90
+
+paths:
+  public_repo: /home/z/my-project/specs-catalog
+  private_ledger: /home/z/my-project/specs-ledger
+  secrets: /home/z/my-project/.secrets
+  scripts: /home/z/my-project/scripts

@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "spec manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "slug",
+    "tier",
+    "status",
+    "category",
+    "platform_class",
+    "family",
+    "capabilities",
+    "version",
+    "created",
+    "updated",
+    "gates",
+    "checksum",
+    "provenance_ref",
+    "legal_flags",
+    "owner_role"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SPEC-[0-9]{9}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "tier": {
+      "enum": [
+        "T1",
+        "T2"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "in-review",
+        "published",
+        "suspended",
+        "withdrawn"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "platform_class": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string",
+      "pattern": "^FAM-[0-9]{6}$"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CAP-[0-9]{4}$"
+      },
+      "minItems": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "gates": {
+      "type": "object"
+    },
+    "checksum": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_ref": {
+      "type": "string",
+      "pattern": "^PRV-[0-9A-Fa-f]{8}$"
+    },
+    "legal_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner_role": {
+      "type": "string"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

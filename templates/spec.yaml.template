@@ -1,0 +1,26 @@
+id: SPEC-000000000
+title: <generic functional description>
+slug: <generic-slug>
+tier: T1
+status: draft
+category: <category-slug>
+platform_class: <platform-slug>
+family: FAM-000000
+capabilities: [CAP-0000]
+version: 0.1.0
+created: 2026-10-30
+updated: 2026-10-30
+gates:
+  name-free: {result: pending, date: null}
+  expression-free: {result: pending, date: null}
+  asset-free: {result: pending, date: null}
+  secret-free: {result: pending, date: null}
+  similarity: {result: pending, date: null}
+  reverse-identification: {result: pending, date: null}
+  sufficiency: {result: pending, date: null}
+  neutrality: {result: pending, date: null}
+checksum: null
+provenance_ref: PRV-00000000
+legal_flags: []
+owner_role: spec-author
+related: []

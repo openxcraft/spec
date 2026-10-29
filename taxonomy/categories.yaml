@@ -1,0 +1,36 @@
+meta:
+  updated: '2026-10-30'
+  owner_role: orchestrator-operator
+categories:
+- slug: productivity
+  description: Authoring, planning, and personal task execution tools.
+- slug: communication
+  description: Messaging, calls, mail, and notification delivery tools.
+- slug: collaboration
+  description: Shared work, co-editing, review, and workspace tools.
+- slug: education
+  description: Learning delivery, assessment, and practice tools.
+- slug: privacy-and-security
+  description: Credential, encryption, and traffic protection tools.
+- slug: finance
+  description: Payments, budgeting, invoicing, and money management tools.
+- slug: health-and-fitness
+  description: Activity, nutrition, habit, and wellness tracking tools.
+- slug: media-and-creative
+  description: Playback, editing, and content creation tools.
+- slug: developer-tools
+  description: Code hosting, build, debug, and delivery tools.
+- slug: e-commerce
+  description: Catalog, cart, checkout, and storefront tools.
+- slug: games
+  description: Interactive entertainment and progression systems.
+- slug: data-and-analytics
+  description: Pipelines, dashboards, and analysis tools.
+- slug: automation
+  description: Workflow triggers, integrations, and orchestration tools.
+- slug: knowledge-management
+  description: Notes, search, and personal or team knowledge tools.
+- slug: civic-and-government-services
+  description: Public service lookup, filing, and request tools.
+- slug: system-utilities
+  description: Cleanup, backup, monitoring, and device tools.

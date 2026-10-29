@@ -1,0 +1,6 @@
+state/raw/
+state/queue/*.tmp
+*.token
+*.key
+.secrets/
+build-log/

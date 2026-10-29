@@ -1,0 +1,22 @@
+meta:
+  updated: '2026-10-30'
+  owner_role: orchestrator-operator
+platforms:
+- slug: web
+  description: Browser-accessed applications.
+- slug: mobile
+  description: Native or hybrid phone and tablet applications.
+- slug: desktop
+  description: Windows, macOS, and Linux desktop applications.
+- slug: command-line
+  description: Terminal and shell tools.
+- slug: browser-extension
+  description: Browser add-ons and extensions.
+- slug: api-and-services
+  description: HTTP APIs and backend services.
+- slug: embedded
+  description: Firmware and embedded device software.
+- slug: cloud-platform
+  description: Hosted platforms and infrastructure services.
+- slug: open-source-tool
+  description: Publicly licensed source-available tools.
